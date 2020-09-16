@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/react-lqx-resume/static/css/main.18b5c3b8.chunk.css",
+    "main.js": "/react-lqx-resume/static/js/main.c44ebb45.chunk.js",
+    "main.js.map": "/react-lqx-resume/static/js/main.c44ebb45.chunk.js.map",
+    "runtime-main.js": "/react-lqx-resume/static/js/runtime-main.92515485.js",
+    "runtime-main.js.map": "/react-lqx-resume/static/js/runtime-main.92515485.js.map",
+    "static/css/2.33a79b0e.chunk.css": "/react-lqx-resume/static/css/2.33a79b0e.chunk.css",
+    "static/js/2.787ed47e.chunk.js": "/react-lqx-resume/static/js/2.787ed47e.chunk.js",
+    "static/js/2.787ed47e.chunk.js.map": "/react-lqx-resume/static/js/2.787ed47e.chunk.js.map",
+    "index.html": "/react-lqx-resume/index.html",
+    "precache-manifest.2e7120a6e10d35deeeab5d5b3fa5a0b2.js": "/react-lqx-resume/precache-manifest.2e7120a6e10d35deeeab5d5b3fa5a0b2.js",
+    "service-worker.js": "/react-lqx-resume/service-worker.js",
+    "static/css/2.33a79b0e.chunk.css.map": "/react-lqx-resume/static/css/2.33a79b0e.chunk.css.map",
+    "static/css/main.18b5c3b8.chunk.css.map": "/react-lqx-resume/static/css/main.18b5c3b8.chunk.css.map",
+    "static/js/2.787ed47e.chunk.js.LICENSE.txt": "/react-lqx-resume/static/js/2.787ed47e.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.92515485.js",
+    "static/css/2.33a79b0e.chunk.css",
+    "static/js/2.787ed47e.chunk.js",
+    "static/css/main.18b5c3b8.chunk.css",
+    "static/js/main.c44ebb45.chunk.js"
+  ]
+}
