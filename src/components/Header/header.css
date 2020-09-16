@@ -1,0 +1,81 @@
+/* header */
+.header {
+  display: flex;
+  font-size: 1em;
+}
+/* header detail */
+.header-qrcode > img {
+  width: 130px;
+  height: 130px;
+}
+.header-title > h1 {
+  margin: 5px 0px;
+  line-height: 1;
+}
+.header-title > h3 {
+  margin: 10px 0px;
+}
+#image-canvas {
+  position: relative;
+}
+/* 之后我自己写的 */
+.header-background {
+  position: absolute;
+  font-family: "Great Vibes", cursive;
+  font-size: 5.5em;
+  font-weight: bold;
+  top: -50px;
+  left: 70px;
+  width: 794px;
+  color: rgba(0, 0, 0, 0.1);
+}
+.header-name {
+  flex: 1;
+  float: left;
+  margin: 10px 0px 0px 10px;
+}
+.header-name h1 {
+  margin: 0px;
+  text-align: center;
+  font-size: 3em;
+  font-weight: bold;
+}
+.header-name h2 {
+  margin: 0px;
+  text-align: center;
+  font-size: 1.125em;
+  color: #027ef2;
+}
+.header-information {
+  text-align: left;
+  font-style: normal;
+  margin: 10px 0px 0px 0px;
+}
+.header-information > ul {
+  margin-top: 10px;
+  display: block;
+  list-style: none;
+}
+.header-information > ul > li {
+  display: block;
+  list-style: none;
+  line-height: 1.4;
+  font-size: 1em;
+}
+.header-information > ul > li > i {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 5px;
+  font-size: 1em;
+}
+
+.header-wechat {
+  flex: 1;
+  text-align: right;
+  flex-basis: 130px;
+  margin: 10px 10px 0px 0px;
+}
+.header-wechat img {
+  width: 100px;
+  height: 100px;
+}

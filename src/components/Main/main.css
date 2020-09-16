@@ -1,0 +1,10 @@
+.main-left {
+  width: 61.8%;
+  height: 100%;
+  float: left;
+}
+.main-right {
+  width: 35.7%;
+  height: 100%;
+  float: right;
+}
