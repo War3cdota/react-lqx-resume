@@ -3,8 +3,8 @@
 ## 干啥的
 使用了**create react app + typescript**模仿的一个简历生成器，使用第三方的库：
 
-	- google的图表API生成扇形图，并将其包装成React组件，进行自定义。
-	- 使用**monaco editor**在线编辑器对简历内容进行在线编辑，并实时展示。
+- google的图表API生成扇形图，并将其包装成React组件，进行自定义。
+- 使用**monaco editor**在线编辑器对简历内容进行在线编辑，并实时展示。
 
 ## 怎么做
 
