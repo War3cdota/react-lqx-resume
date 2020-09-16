@@ -1,44 +1,48 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<a href="https://war3cdota.github.io/react-lqx-resume/">Demo</a>
 
-## Available Scripts
+## 干啥的
+使用了**create react app + typescript**模仿的一个简历生成器，使用第三方的库：
 
-In the project directory, you can run:
+	- google的图表API生成扇形图，并将其包装成React组件，进行自定义。
+	- 使用**monaco editor**在线编辑器对简历内容进行在线编辑，并实时展示。
 
-### `npm start`
+## 怎么做
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+1. 页面设计+布局，参考了之前的静态页面，并将其优化，找出其中的HTML元素之间的布局关系，然后抽象并封装成可以复用的UI Component，其中可以使用阿里巴巴矢量图标库下的svg图标生成css库的方式使用图标。
+2. 搭建**create react app + typescript**的开发环境，快速掌握typescript，并进行相应的**react组件**的开发。
+3. 调通页面数据的展示部分的组件逻辑，并进行图表等第三方UI组件的开发。
+4. 完成整个页面内容展示的开发后。再进行editor组件，涉及monaco editor第三方组件，以及编辑，重置，pdf导出功能。
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+## 参考&&鸣谢（排名不分先后）
+参考模板：https://tracy-nwu.github.io/resume/
 
-### `npm test`
+create react app + typescript学习：https://create-react-app.dev/docs/adding-typescript/
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+​							https://github.com/typescript-cheatsheets/react#reacttypescript-cheatsheets（学习指导）
 
-### `npm run build`
+typescript快速入门+速查：https://2ality.com/2018/04/type-notation-typescript.html（**这篇blog非常好，快速入门typescript**）
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+js+css API：https://developer.mozilla.org/zh-CN/
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+flex布局：http://www.ruanyifeng.com/blog/2015/07/flex-grammar.html
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+​				https://www.ruanyifeng.com/blog/2015/07/flex-examples.html
 
-### `npm run eject`
+​				https://developer.mozilla.org/zh-CN/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+react-API：https://reactjs.org/docs/react-api.html
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+React引入静态JS（引入本地JS需要修改配置文件，太麻烦了，所以直接引用Web库）：https://zhuanlan.zhihu.com/p/58297149
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+图表API：https://developers.google.com/chart/interactive/docs/gallery/piechart#fullhtml
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+monaco editor的react组件库：https://github.com/react-monaco-editor/react-monaco-editor
 
-## Learn More
+~~外部点击事件~~（废弃，改用Modal实现）：https://stackoverflow.com/questions/32553158/detect-click-outside-react-component
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Modal实现：https://www.30secondsofcode.org/react/s/modalreact
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+​						https://github.com/react-monaco-editor/react-monaco-editor/blob/master/example/index.js
+
+项目发布到githubpages：https://dev.to/yuribenjamin/how-to-deploy-react-app-in-github-pages-2a1f
+
