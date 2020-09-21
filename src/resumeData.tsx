@@ -1,35 +1,81 @@
-// 标题节点描述
+/** 最底层的叶子节点的数据 */
 export interface NodeData {
+  /** 文本类型定义，决定其展示样式  */
+  titletype: "title" | "subtitle" | "time|location" | "datalist";
+  /** 可选图标定义  */
   icon?: string;
-  text: string;
-  titletype: string;
+  /** 可选文本定义，根据type决定 */
+  text?: string;
+  /** 数据数组定义  */
+  data?: Array<string>;
 }
-export interface ContentListData {
-  icon?: string;
-  data: Array<string>;
-}
+/** 数据条目节点定义 */
 export interface ItemData {
-  title: NodeData;
-  subTitle: NodeData;
-  timeline: NodeData;
-  location: NodeData;
-  contentlist: ContentListData;
+  /** Item的title定义  */
+  title?: NodeData;
+  /** Item的subTitle定义  */
+  subTitle?: NodeData;
+  /** Item的timeline定义  */
+  timeline?: NodeData;
+  /** Item的location定义  */
+  location?: NodeData;
+  /** Item的contentlist定义  */
+  contentlist: NodeData;
 }
+/** 内容栏目模块的定义 */
 export interface ContentData {
+  /** 内容栏目的标题 */
   title: string;
+  /** 内容栏目可能有多个item数组 */
   item: Array<ItemData>;
 }
-// 图标数据-googleref:https://developers.google.com/chart/interactive/docs/gallery/piechart
+/** 图表数据-googleref:https://developers.google.com/chart/interactive/docs/gallery/piechart */
+/** 图表数据定义 */
 export interface ChartData {
+  /** 图表数据的标题 */
   title: string;
+  /** 图表数据的列表 */
   item: Array<ItemData>;
+  /** 用于生成图表的数据 */
   DataTable: Array<Array<any>>;
 }
+/** 个人信息栏目 */
+export interface InformationData {
+  /** 文本定义 */
+  text: string;
+  /** 图标定义 */
+  icon: string;
+}
+/** resume对象定义 */
+export interface ResumeData {
+  /** 姓名定义 */
+  name: string;
+  /** 英文姓名定义 */
+  englishname: string;
+  /** 描述定义 */
+  description: Array<string>;
+  /** 微信链接定义 */
+  wechat: string;
+  /** 个人信息定义 */
+  information: Array<InformationData>;
+  /** 工作经历定义 */
+  experience: ContentData;
+  /** 项目定义 */
+  project: ContentData;
+  /** 教育经历定义 */
+  education: ContentData;
+  /** 自我评价定义 */
+  selfevaluation: ContentData;
+  /** 技能图表定义 */
+  skillchart: ChartData;
+}
 
-const resume = {
+const resume: ResumeData = {
   name: "栾庆轩",
   englishname: "Qingxuan Luan",
   description: ["前端工程师", "算法", "游戏"],
+  wechat:
+    "https://cdn.nlark.com/yuque/0/2020/png/742036/1600120300666-654ecc46-2545-441a-bcf8-b8daa979cfe7.png",
   information: [
     {
       text: "25 Hangzhou",
@@ -48,8 +94,6 @@ const resume = {
       icon: "icon-blog",
     },
   ],
-  wechat:
-    "https://cdn.nlark.com/yuque/0/2020/png/742036/1600120300666-654ecc46-2545-441a-bcf8-b8daa979cfe7.png",
   experience: {
     title: "工作经历",
     item: [
