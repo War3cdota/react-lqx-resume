@@ -1,13 +1,13 @@
 import React from "react";
 import DataList from "../Unit/DataList";
 import "./header.css";
-
+import { InformationData } from "../../resumeData";
 type HeaderProps = {
   name: string;
   englishname: string;
   wechat: string;
-  description: undefined | Array<any>;
-  information: Array<any>[];
+  description: undefined | Array<string>;
+  information: Array<InformationData>[];
 };
 const Header = ({
   name,
