@@ -3,19 +3,18 @@ import React from "react";
 // import * as monaco from "monaco-editor";
 import MonacoEditor from "react-monaco-editor";
 import "./editor.css";
+import { ResumeData } from "../../resumeData";
 
-const Editor = ({
-  isVisible,
-  data,
-  onEditor,
-  onClose,
-}: // onClickInside,
-{
+type EditorProps = {
   isVisible: boolean;
-  data: any;
-  onEditor: any;
-  onClose: any;
-}) => {
+  data: ResumeData;
+  onEditor: (value: ResumeData) => void;
+  onClose: () => void;
+};
+
+const Editor = (
+  { isVisible, data, onEditor, onClose }: EditorProps // onClickInside,
+) => {
   const text = JSON.stringify(data, null, "\t");
 
   const save = () => {

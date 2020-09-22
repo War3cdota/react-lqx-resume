@@ -4,19 +4,21 @@ import ContentList from "../Sections/ContentList";
 import { ContentData, ChartData } from "../../resumeData";
 import ChartList from "../Sections/ChartList";
 
+type MailProps = {
+  experience: ContentData;
+  project: ContentData;
+  education: ContentData;
+  selfevaluation: ContentData;
+  chart: ChartData;
+};
+
 const Main = ({
   experience,
   project,
   education,
   selfevaluation,
   chart,
-}: {
-  experience: ContentData;
-  project: ContentData;
-  education: ContentData;
-  selfevaluation: ContentData;
-  chart: ChartData;
-}) => {
+}: MailProps) => {
   return (
     <>
       <section className="main-left">

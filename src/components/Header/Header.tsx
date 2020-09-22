@@ -2,19 +2,20 @@ import React from "react";
 import DataList from "../Unit/DataList";
 import "./header.css";
 
+type HeaderProps = {
+  name: string;
+  englishname: string;
+  wechat: string;
+  description: undefined | Array<any>;
+  information: Array<any>[];
+};
 const Header = ({
   name,
   englishname,
   wechat,
   description,
   information,
-}: {
-  name: string;
-  englishname: string;
-  wechat: string;
-  description: undefined | Array<any>;
-  information: Array<any>[];
-}) => {
+}: HeaderProps) => {
   // list：内容列表
   // console.log("information", information);
 

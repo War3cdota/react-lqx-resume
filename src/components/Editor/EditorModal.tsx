@@ -4,12 +4,13 @@ import Button from "../Unit/Button";
 // import * as monaco from "monaco-editor";
 import Editor from "./Editor";
 import "./editor.css";
+import { ResumeData } from "../../resumeData";
 
 const EditorModal = ({
   data,
   onEditorChange,
 }: {
-  data: any;
+  data: ResumeData;
   onEditorChange: any;
 }) => {
   const [isModal, setModal] = React.useState(false);

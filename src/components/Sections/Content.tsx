@@ -1,6 +1,5 @@
 import React from "react";
 import ContentSubtitleItem from "./ContentSubtitleItem";
-import ListItem from "./ListItem";
 import { ItemData } from "../../resumeData";
 
 const Content = ({ item }: { item: ItemData }) => {
@@ -13,12 +12,12 @@ const Content = ({ item }: { item: ItemData }) => {
       {!(item.subTitle && item.subTitle) ? null : (
         <div className="subtitle-column">
           {item.subTitle ? <ContentSubtitleItem data={item.subTitle} /> : null}
-          {item.subTitle ? <ContentSubtitleItem data={item.location} /> : null}
+          {item.location ? <ContentSubtitleItem data={item.location} /> : null}
         </div>
       )}
 
       <div className="subtitle-column">
-        <ListItem data={item.contentlist} />
+        <ContentSubtitleItem data={item.contentlist} />
       </div>
     </div>
   );

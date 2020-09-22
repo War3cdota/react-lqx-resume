@@ -3,7 +3,7 @@ import logo from "./logo.svg";
 import "./App.css";
 import Header from "./components/Header/Header";
 import EditorModal from "./components/Editor/EditorModal";
-import resume from "./resumeData";
+import resume, { ResumeData } from "./resumeData";
 import Main from "./components/Main/Main";
 
 const App = () => {
@@ -17,7 +17,7 @@ const App = () => {
       window.localStorage.getItem("resumeData") || JSON.stringify(resume)
     )
   );
-  const handleChangeData = (value: any) => {
+  const handleChangeData = (value: ResumeData): void => {
     setData(value);
   };
   // console.log(data);
