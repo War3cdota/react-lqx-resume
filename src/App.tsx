@@ -20,7 +20,6 @@ const App = () => {
   const handleChangeData = (value: ResumeData): void => {
     setData(value);
   };
-  // console.log(data);
   return (
     <>
       <div className="container" style={style.shadow}>

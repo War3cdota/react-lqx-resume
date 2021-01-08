@@ -22,7 +22,7 @@ const Header = ({
   return (
     <header className="header">
       <section>
-        {/* <h1 className="header-background">{englishname}</h1> */}
+        <h1 className="header-background">{englishname}</h1>
       </section>
       <section className="header-name">
         <h1>{name}</h1>

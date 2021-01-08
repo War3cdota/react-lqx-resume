@@ -1,3 +1,6 @@
+/**注意 Attention！！！
+ *
+ */
 /** 最底层的叶子节点的数据 */
 export interface NodeData {
   /** 文本类型定义，决定其展示样式  */
@@ -121,10 +124,10 @@ const resume: ResumeData = {
           icon: "icon-gear",
           titletype: "datalist",
           data: [
-            "参与前端开发，负责交互式前端框架fw.js的页面逻辑和模板开发，以及相应的开发工具；",
-            "参与商业电视前端与全省信息化平台的开发，协助制定开发规范，维护线上产品的稳定迭代；",
-            "负责对接跨部门产品开发厂商的接入，测试，部署工作；",
-            "负责前端模板及页面的故障处理，主要通过Wireshark抓包分析并配合网络部排查问题，处理及协查故障70余起。",
+            "参与前端开发，负责交互式**前端框架fw.js**的页面逻辑和模板开发，以及相应的开发工具；",
+            "参与商业电视前端与全省信息化平台的开发，协助制定<span class='highlight'>开发规范</span>，维护线上产品的稳定<span class='highlight'>迭代</span>；",
+            "负责对接<span class='highlight'>跨部门产品</span>开发厂商的接入，测试，部署工作；",
+            "负责前端模板及页面的<span class='highlight'>故障处理</span>，主要通过<span class='highlight'>Wireshark抓包分析</span>并配合网络部排查问题，处理及协查故障70余起。",
           ],
         },
       },
@@ -158,9 +161,9 @@ const resume: ResumeData = {
           titletype: "datalist",
           data: [
             "为了获得更好的UI及更流畅地交互功能，也为了适配并利用新硬件的性能，我作为前端开发参与了该项目，该项目在通过后期的验证测试后已经部分的投入使用：",
-            "前端开发，使用Javascript实现了用户交互-焦点移动功能；",
-            "配合服务端，实现了以Json作为数据交换的前后端交互；",
-            "协助服务端解决数据爬取时的正则表达式问题；",
+            "前端开发，使用<span class='highlight'>Javascript</span>实现了用户交互-焦点移动功能；",
+            "配合服务端，实现了以<span class='highlight'>Json</span>作为数据交换的前后端交互；",
+            "协助服务端解决数据爬取时的<span class='highlight'>正则表达式</span>问题；",
             "解决测试时反馈的bug，修复并优化相关前端代码。",
           ],
         },
@@ -190,9 +193,9 @@ const resume: ResumeData = {
           titletype: "datalist",
           data: [
             "Ierde健康项目是一款针对电视端开发的配合相关硬件进行对居家老人的健康管理的web端应用。作为开发，进行了适配ES4及以下的硬件设备的前端业务功能开发：",
-            "参与了项目前期的功能与业务的需求分析；",
-            "负责项目开发模块：适配前端页面的开发及测试反馈，服务器端数据接口对接工作，相关的业务模块功能实现； ",
-            "提供项目的后期技术支撑。",
+            "参与了项目前期的功能与业务的<span class='highlight'>需求分析</span>；",
+            "负责项目开发模块：<span class='highlight'>适配前端页面的开发及测试反馈</span>，服务器端数据接口对接工作，相关的业务模块功能实现； ",
+            "提供项目的后期<span class='highlight'>技术支撑</span>。",
           ],
         },
       },
@@ -233,9 +236,9 @@ const resume: ResumeData = {
           icon: "icon-dot1",
           titletype: "datalist",
           data: [
-            "熟悉React项目的的搭建与应用开发；",
+            "熟悉React项目的的<span class='highlight'>搭建</span>与应用开发；",
             "了解typescript的使用；",
-            "写过基于React的UI组件，了解最佳实践。",
+            "写过基于React的<span class='highlight'>UI组件</span>，了解最佳实践。",
           ],
         },
       },
@@ -250,8 +253,8 @@ const resume: ResumeData = {
           titletype: "datalist",
           data: [
             "掌握基本的算法，利用了三个月时间准备参加了浙江大学2019年秋季的PAT-Advanced，取得了92/100分的成绩：",
-            "提升了算法能力和英文能力；",
-            "通过解决编程问题加深了对基本的数据存储结构的认识；理解并可编程实现经典高级算法；",
+            "提升了<span class='highlight'>算法能力</span>和<span class='highlight'>英文能力</span>；",
+            "通过解决编程问题加深了对基本的<span class='highlight'>数据存储结构</span>的认识；理解并可编程实现<span class='highlight'>经典高级算法</span>；",
             "具备了较强的问题抽象和建模能力，能实现对复杂问题的模拟求解。",
           ],
         },
@@ -266,8 +269,8 @@ const resume: ResumeData = {
           icon: "icon-dot1",
           titletype: "datalist",
           data: [
-            "具有良好的代码风格，严格遵循普遍公认的开发规范；",
-            "使用git进行版本控制和开发。",
+            "具有良好的<span class='highlight'>代码风格</span>，严格遵循普遍公认的开发规范；",
+            "使用<span class='highlight'>git</span>进行版本控制和开发。",
           ],
         },
       },
@@ -281,10 +284,10 @@ const resume: ResumeData = {
           icon: "icon-dot1",
           titletype: "datalist",
           data: [
-            "掌握Java基本语法，能用Java解决问题；",
-            "使用Tomcat服务器进行过后端开发，对JavaWeb有了解；",
+            "掌握<span class='highlight'>Java</span>基本语法，能用Java解决问题；",
+            "使用<span class='highlight'>Tomcat</span>服务器进行过后端开发，对JavaWeb有了解；",
             "了解过ssh框架，编写过相关代码；",
-            "使用过MySql，SQL Server等关系型数据库。",
+            "使用过MySql，SQL Server等<span class='highlight'>关系型数据库</span>。",
           ],
         },
       },
@@ -313,11 +316,11 @@ const resume: ResumeData = {
           icon: "icon-dot3",
           titletype: "datalist",
           data: [
-            "OS：了解操作系统，了解CPU流水线，使用汇编语言编写过程序；",
-            "JS：遵守ECMAScript的JavaScript规范；",
+            "OS：了解操作系统，了解<span class='highlight'>CPU流水线</span>，使用<span class='highlight'>汇编语言</span>编写过程序；",
+            "JS：遵守<span class='highlight'>ECMAScript</span>的JavaScript规范；",
             "Java：了解JavaSE相关知识；",
-            "网络：了解OSI七层网络模型和TCP/IP参考模型；",
-            "算法：掌握经典的算法知识。",
+            "网络：了解<span class='highlight'>OSI七层网络模型</span>和TCP/IP参考模型；",
+            "算法：掌握经典的<span class='highlight'>算法</span>知识。",
           ],
         },
       },
