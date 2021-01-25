@@ -17,7 +17,6 @@ const Header = ({
   information,
 }: HeaderProps) => {
   // list：内容列表
-  // console.log("information", information);
 
   return (
     <header className="header">

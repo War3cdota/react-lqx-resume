@@ -2,9 +2,7 @@ import React from "react";
 
 function useInsideAlerter(ref: any, callback: any) {
   React.useEffect(() => {
-    /**
-     * Alert if clicked on outside of element
-     */
+    /** Alert if clicked on outside of element */
     const handleClickOutside = (event: any) => {
       if (!ref) return;
       if (ref.current && ref.current.contains(event.target)) {
